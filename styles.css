@@ -1,0 +1,122 @@
+@import "reset.css";
+@import "";
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+:root{
+  --red: #E5011C;
+}
+body{
+  margin-left: 5vw;
+  background-color: #000;
+  font-family: helvetica, sans-serif;
+}
+.artworks_header{
+  text-align: center;
+}
+.artworks_header_comp{
+    display: inline-block;
+}
+.artworks .artworks_header_comp img{
+  position: absolute;
+  z-index: -1;
+}
+
+.artworks .artworks_header_comp img:first-child{
+  width: 110px;
+  height: auto;
+  left: 42px;
+  top: 80px;
+}
+
+.artworks .artworks_header_comp img:nth-child(2){
+  width: 44px;
+  height: auto;
+  left: 60px;
+  top: 217px;
+}
+.artworks .artworks_header_comp img:nth-child(3){
+  width: 44px;
+  height: auto;
+  left: 60px;
+  top: 202px;
+}
+
+.artworks .artworks_header_comp img:nth-child(4){
+  width: 74px;
+  height: auto;
+  left: 93px;
+  top: 205px;
+}
+
+.artworks .artworks_header_comp img:nth-child(5){
+  width: 43px;
+  height: auto;
+  left: 160px;
+  top: 150px;
+}
+.artworks .artworks_header_comp .round{
+  position: absolute;
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  top: 240px;
+  left: 140px;
+}
+
+.artworks .artworks_header_comp .rect{
+  position: absolute;
+  background-color: #fff;
+  width: 35px;
+  height: 6px;
+  left: 231px;
+  top: 250px;
+}
+
+.artworks_header_comp h2{
+  display: flex;
+  flex-direction: column;
+}
+.artworks_header_comp h2 span{
+  position: absolute;
+  color: var(--red);
+  font-size: 64px;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 2;
+}
+
+.artworks_header_comp h2 span:first-child{
+  left: 60px;
+  top: 145px;
+}
+
+.artworks_header_comp h2 span:nth-child(2){
+  top: 200px;
+  left: 110px;
+}
+
+.artworks_header_comp h2 span:last-child{
+  top: 255px;
+  left: 170px;
+}
+
+.artworks_header_nav ul{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.artworks_header_nav ul li{
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  text-align: left;
+}
+
+.artworks_header_nav ul li:hover{
+  color: var(--red);
+  transitio: 0.1s ease;
+  cursor: pointer;
+}
